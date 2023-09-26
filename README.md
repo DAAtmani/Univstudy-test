@@ -46,7 +46,3 @@ Vous pouvez clicker sur le button an haut a droite (connexion/inscription) et vo
 page d'inscription et de connexion.
 Et aussi vous pouvez consulter la page de service "touver un logement" qui affiche les differents 
 logements disponible et y a aussi une liste des recherches des villes disponible qui permet d afficher que les logements disponible pour la case selectionné.
-
-```bash
-# Exemple de commande (si applicable)
-commande_exemple paramètre_exemple
