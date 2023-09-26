@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/style3.css">
+    <title>Page services</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tag
+  -->
+  <title>Bienvenue sur la Plateforme d'Aide aux Étudiants Étrangers</title>
+  <meta name="title" content="EduWeb - The Best Program to Enroll for Exchange">
+  <meta name="description" content="This is an education html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-bg.svg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-shape-1.svg">
+  <!--<link rel="preload" as="image" href="./assets/images/hero-shape-2.png"> -->
+
+</head>
+
+<body id="top">
+
+    <script src="assets/js/script3.js"></script>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.png" width="162" height="50" alt="universtudy logo">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="wrapper">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.png" width="162" height="50" alt="Univstudy logo">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-link>Acceuil</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link" data-nav-link>A Propos</a>
+          </li>
+
+          
+
+          <li class="navbar-item">
+            <a href="#blog" class="navbar-link" data-nav-link>Services</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="header-actions">
+
+        <button class="header-action-btn" aria-label="toggle search" title="Search">
+          <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        
+
+          
+        </button>
+
+        <a href="#" class="btn has-before" id="connexionButton">
+          <span class="span">Connexion/Inscription</span>
+
+          <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+        </a>
+
+        <button class="header-action-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  
+
+</head>
+<body>
+    
+
+    <main>
+        <form action="/rechercher" method="get">
+            <!--<input type="text" name="terme_de_recherche" placeholder="Rechercher..."> -->
+            <select name="categorie" onchange="showHideCities()">
+                <option value="tous">Tous</option>
+                <option value="categorie1">Paris</option>
+                <option value="categorie2">Lille</option>
+                <option value="categorie3">Strasbourg</option>
+            </select>
+            
+            
+        </form>
+
+        <section class="section course" id="course" aria-label="course">
+            <div class="container">
+    
+              <p class="section-subtitle"></p>
+    
+              <!--<h2 class="h2 section-title">Services</h2>-->
+    
+              <ul class="grid-list">
+    
+                <li>
+    
+                  <div class="course-card" id="parisCourseCard">
+    
+                    <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                      <img src="./assets/images/course-1.jpg" width="370" height="220" loading="lazy"
+                        alt="Build Responsive Real- World Websites with HTML and CSS" class="img-cover">
+                    </figure>
+    
+                    <div class="abs-badge">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+    
+                      <span class="span"></span>
+                    </div>
+    
+                    <div class="card-content">
+    
+                      <span class="badge"></span>
+    
+                      <h3 class="h3">
+                        <a href="#" class="card-title" id="paris">Paris</a>
+                    </h3>
+    
+                      <div class="wrapper">
+    
+                        <div class="rating-wrapper">
+                          
+                        </div>
+    
+                        <p class="rating-text"></p>
+    
+                      </div>
+    
+                      <data class="price" value="29"></data>
+    
+                      <ul class="card-meta-list">
+    
+                        <li class="card-meta-item">
+                          <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+    
+                          <span class="span">13 rue rivoli</span>
+                        </li>
+    
+                        <li class="card-meta-item">
+                          <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+    
+                          <span class="span">Residence lucie aubrac </span>
+                        </li>
+    
+                      </ul>
+    
+                    </div>
+    
+                  </div>
+                </li>
+    
+                <li>
+                  <div class="course-card" id="LilleCourseCard">
+    
+                    <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                      <img src="./assets/images/course-2.jpg" width="370" height="220" loading="lazy"
+                        alt="Java Programming Masterclass for Software Developers" class="img-cover">
+                    </figure>
+    
+                    <div class="abs-badge">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+    
+                      <span class="span"></span>
+                    </div>
+    
+                    <div class="card-content" >
+    
+                      <span class="badge"></span>
+    
+                      <h3 class="h3">
+                        <a href="#" class="card-title" id="lille">Lille</a>
+                    </h3>
+    
+                      <div class="wrapper">
+    
+                        <div class="rating-wrapper">
+                          
+                        </div>
+    
+                        <p class="rating-text"></p>
+    
+                      </div>
+    
+                      <data class="price" value="49"></data>
+    
+                      <ul class="card-meta-list">
+    
+                        <li class="card-meta-item">
+                          <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+    
+                          <span class="span">12bis rue de fabourg</span>
+                        </li>
+    
+                        <li class="card-meta-item">
+                          <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+    
+                          <span class="span">residence le palmer</span>
+                        </li>
+    
+                      </ul>
+    
+                    </div>
+    
+                  </div>
+                </li>
+    
+                <li>
+                  <div class="course-card" id="strasCourseCard">
+    
+                    <figure class="card-banner img-holder" style="--width: 370; --height: 220;">
+                      <img src="./assets/images/course-3.jpg" width="370" height="220" loading="lazy"
+                        alt="The Complete Camtasia Course for Content Creators" class="img-cover">
+                    </figure>
+    
+                    <div class="abs-badge">
+                      <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+    
+                      <span class="span"></span>
+                    </div>
+    
+                    <div class="card-content">
+    
+                      <span class="badge"></span>
+    
+                      <h3 class="h3">
+                        <a href="#" class="card-title" id="strasbourg">Strasbourg</a>
+                    </h3>
+    
+                      <div class="wrapper">
+    
+                        <div class="rating-wrapper">
+                          
+                        </div>
+    
+                        <p class="rating-text"></p>
+    
+                      </div>
+    
+                      <data class="price" value="35"></data>
+    
+                      <ul class="card-meta-list">
+    
+                        <li class="card-meta-item">
+                          <ion-icon name="library-outline" aria-hidden="true"></ion-icon>
+    
+                          <span class="span">168 boulevard lefevre</span>
+                        </li>
+    
+                        <li class="card-meta-item">
+                          <ion-icon name="people-outline" aria-hidden="true"></ion-icon>
+    
+                          <span class="span">Residence d'ourc</span>
+                        </li>
+    
+                      </ul>
+    
+                    </div> 
+    
+                  </div> 
+                </li>
+    
+              </ul>
+    
+              
+              
+
+                
+    
+            </div>
+          </section>
+          <section class="section hero has-bg-image" id="home" aria-label="home"
+        style="background-image: url('./assets/images/hero-bg.svg')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 section-title">
+              découvrir <span class="span">les aides</span> proposé par état pour le logement des étuudiant 
+            </h1>
+
+            <p class="hero-text">
+              
+            </p>
+
+            <a href="#" class="btn has-before">
+              <span class="span">En savoir plus+</span>
+
+              <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+            </a>
+
+          </div>
+
+          <figure class="hero-banner">
+
+            <div class="img-holder one" style="--width: 270; --height: 300;">
+              <img src="./assets/images/aide-1.jpg" width="270" height="300" alt="hero banner" class="img-cover">
+            </div>
+
+            <div class="img-holder two" style="--width: 240; --height: 370;">
+              <img src="./assets/images/aide-2.jpg" width="240" height="370" alt="hero banner" class="img-cover">
+            </div>
+
+            
+
+          </figure>
+
+        </div>
+      </section>
+    
+
+    </main>
+
+    <footer class="footer" style="background-image: url('./assets/images/footer-bg.png')">
+
+        <div class="footer-top section">
+          <div class="container grid-list">
+    
+            <div class="footer-brand">
+    
+              <a href="#" class="logo">
+                <img src="./assets/images/logo-light.svg" width="162" height="50" alt="univstudy logo">
+              </a>
+    
+              <p class="footer-brand-text">
+                
+              </p>
+    
+              <div class="wrapper">
+                <span class="span">Add:</span>
+    
+                <address class="address">1 Allée Émile Cohl 77200 Torcy</address>
+              </div>
+    
+              <div class="wrapper">
+                <span class="span">Call:</span>
+    
+                <a href="tel:+011234567890" class="footer-link">+06 66 66 66 66</a>
+              </div>
+    
+              <div class="wrapper">
+                <span class="span">Email:</span>
+    
+                <a href="mailto:info@eduweb.com" class="footer-link">info@UNIVSTUDY.com</a>
+              </div>
+    
+            </div>
+    
+            <ul class="footer-list">
+    
+              <li>
+                <p class="footer-list-title">Univstudy</p>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">A Propos</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">services</a>
+              </li>
+    
+              
+    
+            </ul>
+    
+            <ul class="footer-list">
+    
+              <li>
+                <p class="footer-list-title">Liens</p>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Contacte</a>
+              </li>
+    
+              <li>
+                <a href="#" class="footer-link">Sign In/Registration</a>
+              </li>
+    
+              
+    
+            </ul>
+    
+            <div class="footer-list">
+    
+              <p class="footer-list-title">Contacts</p>
+    
+              <p class="footer-list-text">
+                Entrer vous addresses email pour enregister dans l'inscription à la Newsletter
+              </p>
+    
+              <form action="" class="newsletter-form">
+                <input type="email" name="email_address" placeholder="Your email" required class="input-field">
+    
+                <button type="submit" class="btn has-before">
+                  <span class="span">Subscribe</span>
+    
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </button>
+              </form>
+    
+              <ul class="social-list">
+    
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
+    
+                <li>
+                  <a href="#" class="social-link">
+                    <ion-icon name="logo-youtube"></ion-icon>
+                  </a>
+                </li>
+    
+              </ul>
+    
+            </div>
+    
+          </div>
+        </div>
+    
+        <div class="footer-bottom">
+          <div class="container">
+    
+            <p class="copyright">
+              © 2023 Votre Agence. Tous droits réservés <a href="#" class="copyright-link">univstudy</a>
+            </p>
+    
+          </div>
+        </div>
+    </footer>
+</body>
+</html>
