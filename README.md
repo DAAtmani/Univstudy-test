@@ -35,9 +35,9 @@ Avant de pouvoir exécuter ce projet, assurez-vous d'avoir les éléments suivan
 
 ## Installation
 
-1. Clonez ce dépôt : `git clone https://github.com/votre-utilisateur/votre-projet.git`
-2. Accédez au répertoire du projet : `cd votre-projet`
-3. Si des dépendances Node.js sont utilisées, installez-les : `npm install`
+1. Clonez ce dépôt : `https://github.com/DAAtmani/Univstudy-test.git`
+2. Accédez au répertoire du projet : `cd Univestudy-test`
+3. Ouvrir l'index
 
 ## Utilisation
 
